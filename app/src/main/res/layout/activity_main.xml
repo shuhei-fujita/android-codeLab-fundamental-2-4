@@ -27,11 +27,24 @@
         android:layout_height="wrap_content"
         android:padding="16dp">
 
-        <TextView
-            android:id="@+id/bio_text"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:lineSpacingMultiplier="2.0"
-            android:text="@string/bio" />
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@android:drawable/ic_menu_help"
+                style="@style/NAmeStyle"
+                android:padding="16dp"/>
+            
+            <TextView
+                android:id="@+id/bio_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:lineSpacingMultiplier="2.0"
+                android:text="@string/bio" />
+        </LinearLayout>
     </ScrollView>
 </LinearLayout>
