@@ -11,7 +11,25 @@
     <TextView
         android:id="@+id/name_text"
         android:text="@string/name"
-        style="@style/NAmeStyle" />
+        style="@style/NameStyle" />
+
+    <EditText
+        android:id="@+id/nickname_edit"
+        style="@style/NameStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        android:hint="@string/what_is_your_nickname"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/done_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/done"
+        android:layout_gravity="center_horizontal"
+        style="@style/Widget.AppCompat.Button.Colored" />
 
     <ImageView
         android:id="@+id/star_image"
@@ -36,7 +54,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:srcCompat="@android:drawable/ic_menu_help"
-                style="@style/NAmeStyle"
+                style="@style/NameStyle"
                 android:padding="16dp"/>
             
             <TextView
